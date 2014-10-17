@@ -2,17 +2,9 @@
 #include <fstream>
 #include <cstring>
 #include <cstdlib>
-#include <algorithm>
-#include <cmath>
 #include <stdexcept>
 
 using namespace std;
-
-/*
-char line[];
-char* linePtr;
-char** listPtr;
-*/
 
 struct PointerArray {
 	string** pointer;
@@ -88,8 +80,6 @@ PointerArray* ReadFile(const char filename[]) {
 	ptrArr->length = count;
 
 	WriteArray(ptrArr, ifs, filename);	
-
-	//PrintArray(ptrArr);
 
 	return ptrArr;
 }
